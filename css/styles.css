@@ -204,11 +204,11 @@ color: #757575;
   /* text-decoration:none */
 }
 .footer-section {
-position: absolute;
-width: 1600px;
-height: 252px;
-left: 0px;
-top: 2097px;
+/* position: absolute; */
+/* width: 1600px;
+height: 252px; */
+/* left: 0px;
+top: 2097px; */
 
 background-color: #2F303A;
 }
