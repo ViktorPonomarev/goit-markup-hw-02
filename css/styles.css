@@ -85,12 +85,12 @@ color:var(--title-text-color);
 
 /* Секции */
 .section {
-  color: var(--accent-text-color);
+  color: var();
 }
 .section-title {
-  color: var(--accent-text-color);
+  color: var();
 }
 /* features */
 .feature-list .title{
-  color: var(--accent-text-color);
+  color: var();
 }
