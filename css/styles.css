@@ -233,7 +233,7 @@ background-color: var(--accent-color);
 .features-section {
   background-color: var(--main-bacground-color);
 }
-.features-item {
+.features-items {
 font-family: inherit;
 font-weight: 700;
 font-size: 18px;
