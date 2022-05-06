@@ -6,6 +6,7 @@
   --main-text-color: #757575;
   --title-text-color: #212121;
   --secondary-text-color: #FFFFFF;
+  --logo-text-color: #000000;
   /* bacground-calor */
   --main-bacground-color: #FFFFFF;
   --secondary-bacground-color: #2F303A;
@@ -13,19 +14,34 @@
   --team-bacgrount-color: #F5F4FA;
 }
 body {
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font);
   font-size: 14px;
   /* line-height: 35px; */
 letter-spacing: 0.03em;
-  color: var(--main-text-color), sans-serif;
+  color: var(--main-text-color);
+  background-color: var(--main-bacground-color);
  }
 
 .list {
   list-style: none;
-    }
+  }
 
 .link {
   text-decoration: none;
+  }
+  /* Скрытые заголовки */
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 /* Шапка */
 
@@ -35,18 +51,18 @@ color: var(--main-bacground-color);
 /* Логотип */
 .logo {
 color: var(--accent-color);
-font-family: inherit;
+font-style: normal;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
 }
 .logo-title {
-  color: #000000;
-  font-family: inherit;
+  color: var(--logo-text-color);
+  font-style: normal;
   font-weight: 700;
-  font-size: 1.19;
-  line-height: 31px;
+  font-size: 26px;
+  line-height: 1,19;
   letter-spacing: 0.03em;
 }
 
@@ -56,22 +72,41 @@ letter-spacing: 0.03em;
  /* background-color:var(--accent-color); */
  color: var(--accent-color);
 }
-.link-title .link {
+.link .current {
 color: var(--accent-color);
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
 }
+
+
 .link {
 color: var(--title-text-color);
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
 }
+
+
 /* auth-nav */
 .auth-nav {
 color: var(--main-text-color);
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
 }
 /*Герой */
 .hero-section {
    background-color: var(--secondary-bacground-color);
   }
 .hero-title {
-  font-family: inherit;
+  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -83,11 +118,11 @@ color: var(--main-text-color);
   
 /* button */
 .hero-btn {
-font-family: inherit;
+font-style: normal;
 cursor: pointer;
 font-weight: 700;
 font-size: 16px;
-line-height: 1.9;
+line-height: 1.87;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
@@ -98,27 +133,25 @@ color: var(--secondary-text-color);
 .btn-portfolio:focus {
   color: var(--title-text-color);
   background-color: var(--accent-color);
+  
 }
 
 /* Секция Преимущества */
 .benefits-section {
   background-color: var(--main-bacground-color);
   }
-/* Скрытые заголовки : Преимущества, Товары и услуги */
-.benefits-item,
-.features-item {
-  visibility: hidden
-}
+/* Преимущества, Товары и услуги */
+
 
 .benefits-text {
-  font-family: inherit;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.42;
  letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
 .benefits-title {
-  font-family: inherit;
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.71;
@@ -132,7 +165,7 @@ color: var(--secondary-text-color);
   background-color: var(--main-bacground-color);
   }
 .galerry-title {
-  font-family: inherit;
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.71;
@@ -147,7 +180,7 @@ color: var(--secondary-text-color);
  
 }
 .team-title {
-  font-family: inherit;
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -157,7 +190,7 @@ color: var(--secondary-text-color);
   color: var(--title-text-color);
 }
 .team-item {
-  font-family: inherit;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -166,7 +199,7 @@ color: var(--secondary-text-color);
   color: var(--title-text-color);
 }
 .team-text {
-font-family: inherit;
+font-style: normal;
 font-size: 16px;
 line-height: 1.19;
 text-align:center;
@@ -177,7 +210,7 @@ color: var(--main-text-color);
 /* логотип */
 .logo {
   color: var(--accent-color);
-  font-family: inherit;
+  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -186,7 +219,7 @@ color: var(--main-text-color);
 
 .logo-title-span {
   color: var(--secondary-text-color);
-  font-family: inherit;
+  font-style: normal;
  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -197,14 +230,14 @@ background-color:var(--secondary-bacground-color);
  color: var(--secondary-text-color);
 } 
 .footer-text {
-  font-family: inherit;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 .footer-link {
-  font-family: inherit;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -213,28 +246,27 @@ background-color:var(--secondary-bacground-color);
 /* Портфолио  */
 /* button portfolio */
 .btn-portfolio {
-font-family: inherit;
+font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.63;
-text-align: left;
 letter-spacing: 0.03em;
-color: var(--secondary-text-color);
+color: var(--title-text-color);
 background-color: var(--galerry-bacground-color);
 cursor: pointer;
 }
         
 .btn-portfolio:hover,
 .btn-portfolio:focus {
-color: var(--title-text-color);
-background-color: var(--accent-color);
+color: var(--secondary-text-color);
+background-color: var(--accent-color)
 }
 /* Товары и услуги */
 .features-section {
   background-color: var(--main-bacground-color);
 }
 .features-items {
-font-family: inherit;
+font-style: normal;
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
@@ -242,7 +274,7 @@ letter-spacing: 0.06em;
 color: var(--title-text-color);
 }
 .features-text {
-font-family: inherit;
+font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.9;
