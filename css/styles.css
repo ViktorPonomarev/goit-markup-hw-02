@@ -75,7 +75,7 @@ letter-spacing: 0.03em;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.list-title.link.current {
+.link.current {
   color: var(--accent-color);
   font-style: normal;
   font-weight: 500;
