@@ -1,6 +1,6 @@
 :root {
-  --main-font: Roboto, sans-serif;
-  --secondary-font: Raleway, sans-serif;
+  --main-font: Raleway, sans-serif;
+  --secondary-font: Roboto, sans-serif;
   /* text-color */
   --accent-color: #2196F3;
   --main-text-color: #757575;
@@ -45,58 +45,48 @@ letter-spacing: 0.03em;
   }
 /* Шапка */
 
+/* site-nav */
+.site-nav.list {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.link.current {
+  color: var(--accent-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
 .header-section {
 color: var(--main-bacground-color);
 }
 /* Логотип */
 .logo {
 color: var(--accent-color);
-font-style: normal;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
-letter-spacing: 0.03em;
+
 }
 .logo-title {
   color: var(--logo-text-color);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1,19;
-  letter-spacing: 0.03em;
+  
 }
 
-/* site-nav */
-.link {
-  color: var(--title-text-color);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.link.current {
-  color: var(--accent-color);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.link:hover,
-.link:focus {
- /* background-color:var(--accent-color); */
- color: var(--accent-color);
-}
+
 
 /* auth-nav */
-.auth-nav {
-  color: var(--main-text-color);
-  font-style: normal;
+.auth-nav .list {
+  font-family: 'Roboto';
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02em;
+  color: var(--main-text-color);
 }
 
 /*Герой */
@@ -104,26 +94,23 @@ letter-spacing: 0.03em;
    background-color: var(--secondary-bacground-color);
   }
 .hero-title {
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align:center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
   
 /* button */
 .hero-btn {
-font-style: normal;
 cursor: pointer;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
 align-items: center;
 text-align: center;
-letter-spacing: 0.06em;
+
 background-color: var(--accent-color);
 color: var(--secondary-text-color);
 }
@@ -142,18 +129,16 @@ color: var(--secondary-text-color);
 
 
 .benefits-text {
-  font-style: normal;
   font-size: 14px;
   line-height: 1.42;
- letter-spacing: 0.03em;
+ 
   color: var(--main-text-color);
 }
 .benefits-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+  
   text-transform: uppercase;
    color: var(--title-text-color);
 }
@@ -163,12 +148,11 @@ color: var(--secondary-text-color);
   background-color: var(--main-bacground-color);
   }
 .galerry-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.71;
   text-align: left;
-  letter-spacing: 0.03em;
+  
   
   color: var(--title-text-color);
 }
@@ -178,77 +162,68 @@ color: var(--secondary-text-color);
  
 }
 .team-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: left;
-  letter-spacing: 0.03em;
+  
   
   color: var(--title-text-color);
 }
 .team-item {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
+  
   color: var(--title-text-color);
 }
 .team-text {
-font-style: normal;
 font-size: 16px;
 line-height: 1.19;
 text-align:center;
-letter-spacing: 0.03em;
+
 color: var(--main-text-color);
 }
 /* Футер */
 /* логотип */
 .logo {
   color: var(--accent-color);
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+  
   }
 
 .logo-title-span {
   color: var(--secondary-text-color);
-  font-style: normal;
- font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+ 
   }
 .footer-section {
 background-color:var(--secondary-bacground-color);
  color: var(--secondary-text-color);
 } 
 .footer-text {
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+  
   color: var(--secondary-text-color);
 }
 .footer-link {
+  font-family: 'Roboto';
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  
+  color: var(--main-text-color)
 }
 /* Портфолио  */
 /* button portfolio */
 .btn-portfolio {
-font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.63;
-letter-spacing: 0.03em;
+
 color: var(--title-text-color);
 background-color: var(--galerry-bacground-color);
 cursor: pointer;
@@ -268,7 +243,7 @@ font-style: normal;
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
-letter-spacing: 0.06em;
+
 color: var(--title-text-color);
 }
 .features-text {
@@ -276,6 +251,6 @@ font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.9;
-letter-spacing: 0.03em;
+
 color: var(--main-text-color);
 }
