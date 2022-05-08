@@ -25,7 +25,14 @@ letter-spacing: 0.03em;
 .list {
   list-style: none;
   }
+.link {
+  text-decoration: none;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
 
+}
 
   /* Скрытые заголовки */
   .visually-hidden {
@@ -62,14 +69,7 @@ letter-spacing: 0.03em;
 }
 
 /* site-nav */
-.link {
-  text-decoration: none;
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  
-}
+
 
 .link.current {
   color: var(--accent-color);
