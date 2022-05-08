@@ -1,6 +1,6 @@
 :root {
-  --main-font: Raleway, sans-serif;
-  --secondary-font: Roboto, sans-serif;
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
   /* text-color */
   --accent-color: #2196F3;
   --main-text-color: #757575;
@@ -26,9 +26,7 @@ letter-spacing: 0.03em;
   list-style: none;
   }
 
-.link {
-  text-decoration: none;
-  }
+
   /* Скрытые заголовки */
   .visually-hidden {
     position: absolute;
@@ -44,51 +42,54 @@ letter-spacing: 0.03em;
     overflow: hidden;
   }
 /* Шапка */
+.header-section {
+  color: var(--main-bacground-color);
+}
+
+/* Логотип */
+.logo {
+  color: var(--accent-color);
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-title {
+  color: var(--logo-text-color);
+ 
+}
 
 /* site-nav */
-.site-nav.list {
+.link {
+  text-decoration: none;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  
 }
 
 .link.current {
   color: var(--accent-color);
+  
 }
 
 .link:hover,
 .link:focus {
+  /* background-color:var(--accent-color); */
   color: var(--accent-color);
 }
 
-.header-section {
-color: var(--main-bacground-color);
-}
-/* Логотип */
-.logo {
-color: var(--accent-color);
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
-
-}
-.logo-title {
-  color: var(--logo-text-color);
-  
-}
-
-
-
 /* auth-nav */
-.auth-nav .list {
-  font-family: 'Roboto';
+.header-link {
+  color: var(--main-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  color: var(--main-text-color);
+  letter-spacing: 0.02em;
 }
-
 /*Герой */
 .hero-section {
    background-color: var(--secondary-bacground-color);
@@ -189,33 +190,34 @@ color: var(--main-text-color);
 /* логотип */
 .logo {
   color: var(--accent-color);
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   
-  }
+}
 
 .logo-title-span {
   color: var(--secondary-text-color);
- 
-  }
+  
+}
+
 .footer-section {
-background-color:var(--secondary-bacground-color);
- color: var(--secondary-text-color);
-} 
+  background-color: var(--secondary-bacground-color);
+  color: var(--secondary-text-color);
+}
+
 .footer-text {
   font-size: 14px;
   line-height: 1.71;
-  
   color: var(--secondary-text-color);
 }
+
 .footer-link {
-  font-family: 'Roboto';
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  
-  color: var(--main-text-color)
+  color: var(--main-text-color);
 }
 /* Портфолио  */
 /* button portfolio */
@@ -239,7 +241,6 @@ background-color: var(--accent-color)
   background-color: var(--main-bacground-color);
 }
 .features-items {
-font-style: normal;
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
@@ -247,7 +248,6 @@ line-height: 2;
 color: var(--title-text-color);
 }
 .features-text {
-font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.9;
